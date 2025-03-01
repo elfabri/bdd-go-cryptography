@@ -37,9 +37,9 @@ import (
 )
 
 func getTot(p, q *big.Int) *big.Int {
-    return p.Mul(
-        p.Sub(p, big.NewInt(1)),
-        q.Sub(q, big.NewInt(1)),
+    return new(big.Int).Mul(
+        new(big.Int).Sub(p, big.NewInt(1)),
+        new(big.Int).Sub(q, big.NewInt(1)),
     )
 }
 
